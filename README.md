@@ -67,6 +67,18 @@ Turno 12 - Avanza 3 casillas - Esta en la casilla 27
 Elija un agujero: 
 ```
 
+### Jugador en la posición 27 y sin acertar
+```
+---+-----------+---------+---------+---------+---------+-----------+
+---| 0.........1.........2.........3.........4.........5.........6 |
+---| 0123456789012345678901234567890123456789012345678901234567890 |
+---+-----------+---------+---------+---------+---------+-----------+
+[J]                             ;--;'
+---+-----------+---------+---------+---------+---------+-----------+
+Turno 13 - No avanza ninguna casilla - Esta en la casilla 27
+Elija un agujero: 
+```
+
 ### Jugador al final
 ```
 ---+-----------+---------+---------+---------+---------+-----------+
@@ -81,7 +93,7 @@ El juego ha terminado
 
 ## Reto extendido
 
-- Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero. (Sí, esto además hace que el contador de fallos se reinicie a cero)
+Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero. (Sí, esto además hace que el contador de fallos se reinicie a cero)
 
 ## Reto ampliado
 
