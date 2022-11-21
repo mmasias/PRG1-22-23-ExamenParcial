@@ -1,21 +1,34 @@
 # Examen parcial 
 
-
 * El presente examen debe desarrollarse con los [conceptos de programación vistos en clase hasta la sesión anterior a este examen](https://github.com/mmasias/prg1-22-23/tree/main/temario).
 * Se deben además respetar los conceptos de código limpio: indentación, nombrado adecuado de constantes, clase y variables.
 
-**Entrega:**
-* Haga un fork de este repositorio, cree una carpeta con el formato apellidoNombre y publique allí su código fuente. 
+## Entrega
+Haga un fork de este repositorio, cree una carpeta con el formato apellidoNombre y publique allí su código fuente. 
+
+No se corregirán entregas que no sigan las reglas anteriormente indicadas o que se envíen fuera del plazo del examen.
+
 # Carrera de camellos
 
-En las ferias, se desarrollan entre otros divertimentos, un juego de carrera de camellos, que básicamente consiste en un camello "controlado" por el jugador, el cual va avanzando según el jugador acierte a embocar una pelota en un agujero.
+En las ferias, se desarrollan entre otros divertimentos, un juego de carrera de camellos, que básicamente consiste en un camello "controlado" por el jugador, el cual va avanzando según se acierte a embocar una pelota en un agujero.
+
+<div align="center">
+
+|Carrera
+|-
+|![](./images/ShimmeringTinyArrowana-size_restricted.gif)
+| 
+</div>
 
 ## Reto base
 
 Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas:
 
-- El jugador elige un agujero al cual lanzar la pelota.
-- En función a tabla indicaba debajo, se calcula la probabilidad de acierto. Si el jugador acierta, avanza el número de casillas indicado. 
+1. El jugador elige un agujero al cual lanzar la pelota.
+1. En función a tabla indicaba debajo, se calcula la probabilidad de acierto. Si el jugador acierta, avanza el número de casillas indicado. 
+1. El jugador inicia en la casilla 0
+1. EL juego termina cuando el jugador llega a la casilla 60
+1. EL juego lleva un conteo del número de turnos empleado
 
 |Agujero|Probabilidad de acierto|Avance del Caballo
 |-|-|-
@@ -26,31 +39,37 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 
 ### Jugador al inicio
 ```
----++---------+---------+---------+---------+---------+---------++
----|0.........1.........2.........3.........4.........5.........6|
----|0123456789012345678901234567890123456789012345678901234567890|
----++---------+---------+---------+---------+---------+---------++
+---+-----------+---------+---------+---------+---------+-----------+
+---| 0.........1.........2.........3.........4.........5.........6 |
+---| 0123456789012345678901234567890123456789012345678901234567890 |
+---+-----------+---------+---------+---------+---------+-----------+
 [J] ;--;'
----++---------+---------+---------+---------+---------+---------++
+---+-----------+---------+---------+---------+---------+-----------+
+Turno 0
+Elija un agujero: 
 ```
 ### Jugador en la posición 27
 ```
----++---------+---------+---------+---------+---------+---------++
----|0.........1.........2.........3.........4.........5.........6|
----|0123456789012345678901234567890123456789012345678901234567890|
----++---------+---------+---------+---------+---------+---------++
-[J]                            ;--;'
----++---------+---------+---------+---------+---------+---------++
+---+-----------+---------+---------+---------+---------+-----------+
+---| 0.........1.........2.........3.........4.........5.........6 |
+---| 0123456789012345678901234567890123456789012345678901234567890 |
+---+-----------+---------+---------+---------+---------+-----------+
+[J]                             ;--;'
+---+-----------+---------+---------+---------+---------+-----------+
+Turno 12 - Avanza 3 casillas - Esta en la casilla 27
+Elija un agujero: 
 ```
 
 ### Jugador al final
 ```
----++---------+---------+---------+---------+---------+---------++
----|0.........1.........2.........3.........4.........5.........6|
----|0123456789012345678901234567890123456789012345678901234567890|
----++---------+---------+---------+---------+---------+---------++
-[J]                                                             ;--;'
----++---------+---------+---------+---------+---------+---------++
+---+-----------+---------+---------+---------+---------+-----------+
+---| 0.........1.........2.........3.........4.........5.........6 |
+---| 0123456789012345678901234567890123456789012345678901234567890 |
+---+-----------+---------+---------+---------+---------+-----------+
+[J]                                                              ;--;'
+---+-----------+---------+---------+---------+---------+-----------+
+Turno 12 - Avanza 2 casillas - Esta en la casilla 60
+El juego ha terminado
 ```
 
 ## Reto extendido
@@ -63,12 +82,15 @@ Amplíe el juego para que intervenga otro caballo gobernado por el ordenador. El
 
 ### Jugador en la posición 27, ordenador en la posición 25
 ```
----++---------+---------+---------+---------+---------+---------++
----|0.........1.........2.........3.........4.........5.........6|
----|0123456789012345678901234567890123456789012345678901234567890|
----++---------+---------+---------+---------+---------+---------++
-[J]                            ;--;'
----++---------+---------+---------+---------+---------+---------++
-[O]                          ;--;'
----++---------+---------+---------+---------+---------+---------++
+---+-----------+---------+---------+---------+---------+-----------+
+---| 0.........1.........2.........3.........4.........5.........6 |
+---| 0123456789012345678901234567890123456789012345678901234567890 |
+---+-----------+---------+---------+---------+---------+-----------+
+[J]                             ;--;'
+---+-----------+---------+---------+---------+---------+-----------+
+[O]                           ;--;'
+---+-----------+---------+---------+---------+---------+-----------+
+Turno 12 - Avanza 2 casillas - Esta en la casilla 27
+El ordenador avanza 3 casillas - Esta en la casilla 25
+Elija un agujero:
 ```
