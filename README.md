@@ -1,12 +1,15 @@
 # Examen parcial 
 
+## Instrucciones
 * El presente examen debe desarrollarse con los [conceptos de programación vistos en clase hasta la sesión anterior a este examen](https://github.com/mmasias/prg1-22-23/tree/main/temario).
 * Se deben además respetar los conceptos de código limpio: indentación, nombrado adecuado de constantes, clase y variables.
+* Para la entrega:
+    1. Haga un fork de éste repositorio. 
+    1. En su repositorio, dentro de la carpeta **entregas** cree una carpeta con su nombre y apellido en formato **apellidoNombre** (*ejemplo: masiasManuel*). 
+    1. Publique allí su código fuente. 
+    1. Al terminar, realice un pull request a este repositorio.
 
-## Entrega
-Haga un fork de este repositorio, cree una carpeta con el formato apellidoNombre y publique allí su código fuente. 
-
-No se corregirán entregas que no sigan las reglas anteriormente indicadas o que se envíen fuera del plazo del examen.
+> **Muy importante:** no se corregirán entregas que obvien las reglas anteriormente indicadas o que se envíen fuera del plazo de entrega del examen.
 
 # Carrera de camellos
 
@@ -17,7 +20,7 @@ En las ferias, se desarrollan entre otros divertimentos, un juego de carrera de 
 |Carrera
 |-
 |![](./images/ShimmeringTinyArrowana-size_restricted.gif)
-| 
+
 </div>
 
 ## Reto base
