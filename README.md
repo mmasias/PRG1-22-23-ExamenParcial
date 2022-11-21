@@ -36,11 +36,11 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 <div align="center">
 
 |Agujero|Probabilidad de acierto|Avance del Caballo
-|-|-|-
-|1|60%|1
-|2|40%|2
-|3|30%|4
-|4|10%|6
+|:-:|:-:|:-:
+|1|60 %|1
+|2|40 %|2
+|3|30 %|4
+|4|10 %|6
 
 </div>
 
@@ -81,7 +81,7 @@ El juego ha terminado
 
 ## Reto extendido
 
-- Extienda el juego para que controle los aciertos del jugador: si el jugador no acierta tres veces seguidas, vuelve a la posición cero. 
+- Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero. (Sí, esto además hace que el contador de fallos se reinicie a cero)
 
 ## Reto ampliado
 
