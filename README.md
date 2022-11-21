@@ -6,7 +6,7 @@
 * Para la entrega:
     1. Haga un fork de éste repositorio. 
     1. En su repositorio, dentro de la carpeta **entregas** cree una carpeta con su nombre y apellido en formato **apellidoNombre** (*ejemplo: masiasManuel*). 
-    1. Publique allí su código fuente. 
+    1. Publique allí su [código fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente) en formato compilable. 
     1. Al terminar, realice un pull request a este repositorio.
 
 > **Muy importante:** no se corregirán entregas que obvien las reglas anteriormente indicadas o que se envíen fuera del plazo de entrega del examen.
