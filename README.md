@@ -1,4 +1,12 @@
-# Carrera de Camellos
+# Examen parcial 
+
+
+* El presente examen debe desarrollarse con los [conceptos de programación vistos en clase hasta la sesión anterior a este examen](https://github.com/mmasias/prg1-22-23/tree/main/temario).
+* Se deben además respetar los conceptos de código limpio: indentación, nombrado adecuado de constantes, clase y variables.
+
+**Entrega:**
+* Haga un fork de este repositorio, cree una carpeta con el formato apellidoNombre y publique allí su código fuente. 
+# Carrera de camellos
 
 En las ferias, se desarrollan entre otros divertimentos, un juego de carrera de camellos, que básicamente consiste en un camello "controlado" por el jugador, el cual va avanzando según el jugador acierte a embocar una pelota en un agujero.
 
