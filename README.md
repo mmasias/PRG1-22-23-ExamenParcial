@@ -27,11 +27,13 @@ En las ferias, se desarrollan entre otros divertimentos, un juego de carrera de 
 
 Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas:
 
-1. El jugador elige un agujero al cual lanzar la pelota.
+1. En cada turno, el jugador elige un agujero al cual lanzar la pelota.
 1. En función a tabla indicaba debajo, se calcula la probabilidad de acierto. Si el jugador acierta, avanza el número de casillas indicado. 
 1. El jugador inicia en la casilla 0
-1. EL juego termina cuando el jugador llega a la casilla 60
-1. EL juego lleva un conteo del número de turnos empleado
+1. El juego termina cuando el jugador llega a la casilla 60
+1. El juego lleva un conteo del número de turnos empleado
+
+<div align="center">
 
 |Agujero|Probabilidad de acierto|Avance del Caballo
 |-|-|-
@@ -39,6 +41,8 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 |2|40%|2
 |3|30%|4
 |4|10%|6
+
+</div>
 
 ### Jugador al inicio
 ```
