@@ -1,0 +1,107 @@
+import java.util.Scanner;
+
+public class ExamenParcial {
+    public static void main(String[] args){
+        
+        final int filasTotal=6;
+        final int distanciaMaxima=60;
+    
+        String bordes = "---+-----------+---------+---------+---------+---------+-----------+";
+        String  distanciaDecimas = "---| 0.........1.........2.........3.........4.........5.........6 |";
+        String distanciaUnidad = "---| 0123456789012345678901234567890123456789012345678901234567890 |";
+        int posicionCamello = 0; 
+        int agujeroLanzar = 0 ;
+        int probabilidadAcertar=0;
+        int turno=0;
+        int agujero=0;
+        int fallosSeguidos=0;
+        int caballoTropieza=0;
+        
+
+        do {
+
+           System.out.println("Turno " + turno);
+            
+
+            
+
+            if(caballoTropieza>=90){
+                probabilidadAcertar=0;
+                turno=+2;
+            }
+
+            if(agujeroLanzar==1 && probabilidadAcertar>=40){
+                agujero=1;
+                posicionCamello =posicionCamello + agujero;
+                fallosSeguidos=0;
+            } else if(agujeroLanzar==2 && probabilidadAcertar>=60){
+                agujero=2;
+                posicionCamello =posicionCamello + agujero;
+                fallosSeguidos=0;
+            } else if(agujeroLanzar==3 && probabilidadAcertar>=70){
+                agujero=4;
+                posicionCamello =posicionCamello + agujero;
+                fallosSeguidos=0;
+            } else if(agujeroLanzar==4 && probabilidadAcertar>=90){
+                agujero=6;
+                posicionCamello =posicionCamello + agujero;
+                fallosSeguidos=0;
+            } else {
+                fallosSeguidos=fallosSeguidos + 1;
+            }
+            
+            if(fallosSeguidos>=3){
+                posicionCamello=0;
+            }
+
+            
+            for(int filas = 0; filas<=filasTotal; filas= filas + 1) {
+    
+                if(filas==0){
+                System.out.println(bordes);
+                } else if(filas==1){
+                            System.out.println(distanciaDecimas);
+                        } else if (filas==2){
+                                System.out.println(distanciaUnidad);
+                            } else if(filas==3){
+                            System.out.println(bordes);
+                                    }else if(filas== 4){
+                                        for (int avanceCamello=0; avanceCamello<=distanciaMaxima; avanceCamello = avanceCamello + 1){
+                                    
+                                            if(avanceCamello!=posicionCamello ){
+                                            System.out.print(" ");
+                                            } else 
+                                                if(avanceCamello==posicionCamello){
+                                                    System.out.print("     ;--;´");
+                                                }
+                                            }
+                                        }
+                                    }
+            System.out.println("");
+
+            System.out.print("Avanza " + agujero + " casillas - " );
+            System.out.println("Está en la posición " + posicionCamello);
+            System.out.println("Elija el agujero: ");
+
+            agujero=0;
+
+            Scanner agujeroElegir = new Scanner(System.in);
+            agujeroLanzar= agujeroElegir.nextInt();
+
+
+            turno++;
+
+            probabilidadAcertar= (int)(Math.random() * (100-0+1));
+            caballoTropieza= (int)(Math.random() * (100-0+1));
+
+
+
+
+        } while (posicionCamello<=60 || turno>=50);
+
+
+        System.out.println("Se acabó la carrera");
+
+
+    }
+}
