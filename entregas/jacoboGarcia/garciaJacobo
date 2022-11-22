@@ -1,0 +1,11 @@
+public class Examenparcial ¨{
+    public  static  void  main ( String [] args ){  
+        final int profundidadTotal = 20;
+        int profundidadCamello = (int)(Math.random()*60);
+        int dia = 0;
+        final string=---+-----------+---------+---------+---------+---------+-----------+
+        final string=---| 0.........1.........2.........3.........4.........5.........6 |
+        final string=---+-----------+---------+---------+---------+---------+-----------+
+        final string=---+-----------+---------+---------+---------+---------+-----------+
+
+ 
