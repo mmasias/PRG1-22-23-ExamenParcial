@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int agujero1 = 1, agujero2 = 2, agujero3 = 3, agujero4 = 4;
+        int turno = 0;
+        int agujero;
+        int posicionFinal = 64;
+        Scanner sc = new Scanner(System.in);
+
+
+        do {
+            do {
+                System.out.println("Elija un agujero:");
+                agujero = sc.nextInt();
+            } while (agujero < 0 || agujero > 4);
+
+            System.out.println("---+-----------+---------+---------+---------+---------+-----------+");
+            System.out.println("---| 0.........1.........2.........3.........4.........5.........6 |");
+            System.out.println("---| 0123456789012345678901234567890123456789012345678901234567890 |");
+            System.out.println("---+-----------+---------+---------+---------+---------+-----------+");
+            System.out.print("[J]|");
+            final String Caracol = ";--;'";
+            for (int posicionInicial = 4; posicionInicial <= posicionFinal; posicionInicial = posicionInicial + 1) {
+
+                if (agujero == agujero1 && Math.random() * 100 < 60) {
+                    System.out.println(" " + Caracol);
+
+                } else if (agujero == agujero1 && Math.random() * 100 > 60) {
+                    System.out.print(Caracol);
+
+                } else if (agujero == agujero2 && Math.random() * 100 < 40) {
+                    System.out.println("  " + Caracol);
+
+                } else if (agujero == agujero2 && Math.random() * 100 > 40) {
+                    System.out.print(Caracol);
+
+                } else if (agujero == agujero3 && Math.random() * 100 < 30) {
+                    System.out.print("    " + Caracol);
+
+
+                } else if (agujero == agujero3 && Math.random() * 100 > 30) {
+                    System.out.print(Caracol);
+
+
+                }
+                if (agujero == agujero4 && Math.random() * 100 < 10) {
+                    System.out.print("      " + Caracol);
+
+
+                } else if (agujero == agujero4 && Math.random() * 100 > 10) {
+                    System.out.print(Caracol);
+
+                }
+                System.out.println();
+
+
+            }
+            System.out.println("---+-----------+---------+---------+---------+---------+-----------+");
+            System.out.print("Turno: " + turno);
+            do {
+                System.out.println("|| Elija un agujero:");
+                agujero = sc.nextInt();
+            } while (agujero < 0 || agujero > 4);
+            turno++;
+        } while (turno <= 50);
+    }
+}
