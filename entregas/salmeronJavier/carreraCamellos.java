@@ -70,6 +70,7 @@ public class carreraCamellos {
 
                 if (numeroAleatorioCamello < 10) {
                     System.out.println("Tu camello tropieza y pierdes 2 turnos");
+                    turnos += 2;
 
                 } else if (numeroAleatorioPelota < probabilidadAcierto) {
                     System.out.println("Aciertas y avanzas " + avanceAcierto + " casillas!");
