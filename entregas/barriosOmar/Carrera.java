@@ -103,8 +103,8 @@ public class Carrera {
                 pistaOrdenador = pistaOrdenador + agujero3;
             }
 
-            turno = turno + 1;
-        } while ((posicionCamello <= meta || posicionOrdenador <= meta || turno <= maxTurnos));
+            turno++;
+        } while (posicionCamello <= meta || posicionOrdenador <= meta || turno <= maxTurnos);
 
         entradaEscaner.close();
     }
