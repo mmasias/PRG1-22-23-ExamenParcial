@@ -96,7 +96,7 @@ El juego ha terminado
 
 ## Reto extendido
 
-Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero. (Sí, esto además hace que el contador de fallos se reinicie a cero)
+Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero.
 
 ## Reto ampliado
 
