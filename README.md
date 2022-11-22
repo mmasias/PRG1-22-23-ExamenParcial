@@ -53,7 +53,7 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
 ---+-----------+---------+---------+---------+---------+-----------+
-[J] ;--;'
+[J]| ;--;'
 ---+-----------+---------+---------+---------+---------+-----------+
 Turno 0
 Elija un agujero: 
@@ -64,7 +64,7 @@ Elija un agujero:
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
 ---+-----------+---------+---------+---------+---------+-----------+
-[J]                             ;--;'
+[J]|                            ;--;'
 ---+-----------+---------+---------+---------+---------+-----------+
 Turno 12 - Avanza 3 casillas - Esta en la casilla 27
 Elija un agujero: 
@@ -76,7 +76,7 @@ Elija un agujero:
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
 ---+-----------+---------+---------+---------+---------+-----------+
-[J]                             ;--;'
+[J]|                            ;--;'
 ---+-----------+---------+---------+---------+---------+-----------+
 Turno 13 - No avanza ninguna casilla - Esta en la casilla 27
 Elija un agujero: 
@@ -88,7 +88,7 @@ Elija un agujero:
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
 ---+-----------+---------+---------+---------+---------+-----------+
-[J]                                                              ;--;'
+[J]|                                                             ;--;'
 ---+-----------+---------+---------+---------+---------+-----------+
 Turno 12 - Avanza 2 casillas - Esta en la casilla 60
 El juego ha terminado
@@ -103,7 +103,7 @@ El juego ha terminado
 
 ## Reto ampliado
 
-Amplíe el juego para que intervenga otro caballo gobernado por el ordenador. El caballo del ordenador puede moverse aleatoriamente 1, 2 o 3 casillas por turno.
+Amplíe el juego para que intervenga otro caballo gobernado por el ordenador. El caballo del ordenador puede moverse aleatoriamente 1, 2 o 3 casillas por turno y, como es el ordenador, no falla en embocar la pelota, ni se cae. Y en caso haya resuelto el reto extendido de los turnos, se le pueden agotar los turnos al igual que el jugador.
 
 ### Jugador en la posición 27, ordenador en la posición 25
 ```
@@ -111,9 +111,9 @@ Amplíe el juego para que intervenga otro caballo gobernado por el ordenador. El
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
 ---+-----------+---------+---------+---------+---------+-----------+
-[J]                             ;--;'
+[J]|                            ;--;'
 ---+-----------+---------+---------+---------+---------+-----------+
-[O]                           ;--;'
+[O]|                          ;--;'
 ---+-----------+---------+---------+---------+---------+-----------+
 Turno 12 - Avanza 2 casillas - Esta en la casilla 27
 El ordenador avanza 3 casillas - Esta en la casilla 25
