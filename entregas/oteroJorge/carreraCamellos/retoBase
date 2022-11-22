@@ -74,6 +74,8 @@ public class ExamenParcial {
             System.out.print("Avanza " + agujero + " casillas - " );
             System.out.println("Está en la posición " + posicionCamello);
             System.out.println("Elija el agujero: ");
+            
+            agujero=0;
 
 
             Scanner agujeroElegir = new Scanner(System.in);
