@@ -38,7 +38,7 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 
 <div align="center">
 
-|Agujero|Probabilidad de acierto|Avance del Caballo
+|Agujero|Probabilidad de acierto|Avance del camello
 |:-:|:-:|:-:
 |1|60 %|1
 |2|40 %|2
@@ -97,7 +97,7 @@ El juego ha terminado
 ## Retos extendidos
 
 - Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero.
-- Extienda el juego para que exista la probabilidad que el camello tropiece: si ocurre esto, el jugador no avanza en ese turno y además pierde 2 turnos. (No hace falta graficar el escenario durante los dos turnos que pierde el jugador).
+- Extienda el juego para que exista la probabilidad que el camello tropiece (10%): si ocurre esto, el jugador no avanza en ese turno y además pierde 2 turnos. (No hace falta graficar el escenario durante los dos turnos que pierde el jugador).
 - Extienda el juego para que el juego tenga un máximo de 50 turnos.
 
 
