@@ -27,7 +27,7 @@ public class carreraCamellos {
             // Dar informacion de partida al usuario
             System.out.print("\n" + asciiBordes + asciiDistancia + asciiBordes);
             asciiPosicion = " ".repeat(posicion); // añadir tantos espacios como avance tenga el jugador
-            System.out.println(("[J]| " + asciiPosicion + asciiCamello + "\n" +asciiBordes));
+            System.out.println(("[J]| " + asciiPosicion + asciiCamello + "\n" + asciiBordes));
             System.out.println("Turno: " + turnos + " - Esta en la casilla " + posicion);
 
             if (posicion >= 60) {
@@ -90,7 +90,7 @@ public class carreraCamellos {
             }
         }
 
-        userInput.close(); 
+        userInput.close();
 
     }
 }
