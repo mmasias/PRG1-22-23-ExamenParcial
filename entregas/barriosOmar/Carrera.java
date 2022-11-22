@@ -18,6 +18,7 @@ public class Carrera {
         int numeroNoAciertos = 0;
         double probabilidadDeAciertoOrdenador = (int) (Math.random() * 10 + 1);
         double probabilidadDeAcierto = Math.random();
+        double probabilidadOrdenador = Math.random();
         String camello = ";--;'";
         String agujero1 = " ";
         String agujero2 = "  ";
@@ -87,23 +88,23 @@ public class Carrera {
             }
             // ordenador
 
-            if (probabilidadDeAciertoOrdenador == 1 && probabilidadDeAcierto < 0.60) {
+            if (probabilidadDeAciertoOrdenador == 1 && probabilidadOrdenador < 0.60) {
                 posicionOrdenador = posicionOrdenador + avanceAgujero1;
                 pistaOrdenador = pistaOrdenador + agujero1;
             }
 
-            if (probabilidadDeAciertoOrdenador == 2 && probabilidadDeAcierto < 0.40) {
+            if (probabilidadDeAciertoOrdenador == 2 && probabilidadOrdenador < 0.40) {
                 posicionOrdenador = posicionOrdenador + avanceAgujero2;
                 pistaOrdenador = pistaOrdenador + agujero2;
             }
 
-            if (probabilidadDeAciertoOrdenador == 3 && probabilidadDeAcierto < 0.30) {
+            if (probabilidadDeAciertoOrdenador == 3 && probabilidadOrdenador < 0.30) {
                 posicionOrdenador = posicionOrdenador + avanceAgujero3;
                 pistaOrdenador = pistaOrdenador + agujero3;
             }
 
             turno++;
-        } while ((posicionCamello <= meta) || (posicionOrdenador <= meta) || (turno <= maxTurnos));
+        } while (posicionCamello <= meta || posicionOrdenador <= meta || turno <= maxTurnos);
 
         entradaEscaner.close();
     }
