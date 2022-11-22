@@ -54,10 +54,7 @@ public class ExamenParcial {
                             } else if(filas==3){
                             System.out.println(bordes);
                         
-                                } else if (filas==5){
-                                    System.out.println(bordes);
-                                
-                                    }else if(filas== 4){
+                                } else if(filas== 4){
                                         for (int avanceCamello=0; avanceCamello<=distanciaMaxima; avanceCamello = avanceCamello + 1){
                                     
                                             if(avanceCamello!=posicionCamello ){
