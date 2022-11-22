@@ -94,9 +94,12 @@ Turno 12 - Avanza 2 casillas - Esta en la casilla 60
 El juego ha terminado
 ```
 
-## Reto extendido
+## Retos extendidos
 
-Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero.
+- Extienda el juego para que controle los fallos del jugador: si el jugador no acierta a embocar la pelota tres veces seguidas, vuelve a la posición cero.
+- Extienda el juego para que exista la probabilidad que el camello tropiece: si ocurre esto, el jugador no avanza en ese turno y además pierde 2 turnos. (No hace falta graficar el escenario durante los dos turnos que pierde el jugador).
+- Extienda el juego para que el juego tenga un máximo de 50 turnos.
+
 
 ## Reto ampliado
 
