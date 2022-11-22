@@ -2,7 +2,10 @@
 
 ## Instrucciones
 * El presente examen debe desarrollarse con los [conceptos de programación vistos en clase hasta la sesión anterior a este examen](https://github.com/mmasias/prg1-22-23/tree/main/temario).
-* Se deben además respetar los conceptos de código limpio: indentación, nombrado adecuado de constantes, clase y variables.
+* Se deben además respetar los conceptos de código limpio: 
+    * Indentación.
+    * Nombrado adecuado de la clase, las constantes y las variables.
+    * Orden en el código.
 * Para la entrega:
     1. Haga un fork de éste repositorio. 
     1. En su repositorio, dentro de la carpeta **entregas** cree una carpeta con su nombre y apellido en formato **apellidoNombre** (*ejemplo: masiasManuel*). 
