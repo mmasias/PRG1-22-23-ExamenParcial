@@ -1,1 +1,0 @@
-Entrega Jose Manuel Rasilla
