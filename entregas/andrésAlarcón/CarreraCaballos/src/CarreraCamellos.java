@@ -12,8 +12,6 @@ public class CarreraCamellos {
         int fallos = 0;
         int posicionCasillas = 0;
 
-        int prob1 = 60, prob2 = 40, prob3 = 30, prob4 = 10;
-
 
         double agujeroAciertoProbabilidad = Math.random();
 
@@ -48,34 +46,52 @@ public class CarreraCamellos {
 
             if (agujeroEscogido == 1) {
 
-                posicionCasillas = posicionCasillas +1;
-                posicion = +1;
                 turnos = turnos +1;
+
+                if (agujeroAciertoProbabilidad < 0.6){
+                   
+                    posicionCasillas = posicionCasillas +1;
+                   posicion = +1;
+
+                }
 
             }
 
             if (agujeroEscogido == 2) {
 
-                posicionCasillas = posicionCasillas +2;
-                posicion =  +2;
                 turnos = turnos +1;
+
+                if (agujeroAciertoProbabilidad < 0.4){
+                   
+                    posicionCasillas = posicionCasillas +2;
+                    posicion =+2;
+
+                }
 
             }
 
             if (agujeroEscogido == 3) {
 
-                posicionCasillas = posicionCasillas +3;
-                posicion = +3;
                 turnos = turnos +1;
 
+                if (agujeroAciertoProbabilidad < 0.3){
+                   
+                    posicionCasillas = posicionCasillas +3;
+                    posicion = +3;
+
+                }
             }
 
             if (agujeroEscogido == 4) {
 
-                posicionCasillas = posicionCasillas +4;
-                posicion = +4;
                 turnos = turnos +1;
 
+                if (agujeroAciertoProbabilidad < 0.1){
+                   
+                    posicionCasillas = posicionCasillas +4;
+                    posicion = +4;
+
+                }
             }
         
         
