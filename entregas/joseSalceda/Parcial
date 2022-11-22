@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+public class Parcial1Extendido {
+    public static void main(String[] args) {
+
+        int casillasAvanzadasJugador = 0;
+        int casillasAvanzadasTurno = 0;
+        int turno = 0;
+        int turnosSeguidosFallados = 0;
+
+        while (casillasAvanzadasJugador < 60) {
+            turno = turno + 1;
+            System.out.println("Elige uno de los 4 agujeros con los numeros del 1 al 4:");
+            Scanner pideConsola = new Scanner(System.in);
+            int agujeroElegido = pideConsola.nextInt();
+            double probabilidad = Math.random();
+
+            if (agujeroElegido == 1) {
+                if (probabilidad <= 0.6) {
+                    casillasAvanzadasTurno = 1;
+                    casillasAvanzadasJugador = casillasAvanzadasJugador + 1;
+                    turnosSeguidosFallados = 0;
+                } else {
+                    turnosSeguidosFallados = turnosSeguidosFallados + 1;
+                    casillasAvanzadasTurno = 0;
+                }
+            } else if (agujeroElegido == 2) {
+                if (probabilidad <= 0.4) {
+                    casillasAvanzadasTurno = 2;
+                    casillasAvanzadasJugador = casillasAvanzadasJugador + 2;
+                    turnosSeguidosFallados = 0;
+                } else {
+                    turnosSeguidosFallados = turnosSeguidosFallados + 1;
+                    casillasAvanzadasTurno = 0;
+                }
+            } else if (agujeroElegido == 3) {
+                if (probabilidad <= 0.3) {
+                    casillasAvanzadasTurno = 4;
+                    casillasAvanzadasJugador = casillasAvanzadasJugador + 4;
+                    turnosSeguidosFallados = 0;
+                } else {
+                    turnosSeguidosFallados = turnosSeguidosFallados + 1;
+                    casillasAvanzadasTurno = 0;
+                }
+            } else if (agujeroElegido == 4) {
+                if (probabilidad <= 0.1) {
+                    casillasAvanzadasTurno = 6;
+                    casillasAvanzadasJugador = casillasAvanzadasJugador + 6;
+                    turnosSeguidosFallados = 0;
+                } else {
+                    turnosSeguidosFallados = turnosSeguidosFallados + 1;
+                    casillasAvanzadasTurno = 0;
+                }
+            } else {
+                System.out.println("Lo que has introducido no es una opción, asique pierdes el turno");
+            }
+
+            if (turnosSeguidosFallados == 3) {
+                casillasAvanzadasJugador = 0;
+                System.out.println("Has fallado 3 veces seguidas, asique vuelves a empezar");
+            }
+
+            probabilidad = Math.random();
+            if (probabilidad <= 0.1) {
+                casillasAvanzadasJugador = casillasAvanzadasJugador - casillasAvanzadasTurno;
+                turno = turno + 2;
+                System.out.println("El camello se ha caido, por lo que lo avanzado en este turno lo ha perdido y pierde 2 turnos mas");
+            }
+
+            System.out.println("---+-----------+---------+---------+---------+---------+-----------+");
+            System.out.println("---| 0.........1.........2.........3.........4.........5.........6 |");
+            System.out.println("---| 0123456789012345678901234567890123456789012345678901234567890 |");
+            System.out.println("---+-----------+---------+---------+---------+---------+-----------+");
+            System.out.print("[J]| ");
+            for (int i = 0; i <= 60; i = i + 1) {
+                if (i < casillasAvanzadasJugador) {
+                    System.out.print(" ");
+                } else if (i == casillasAvanzadasJugador) {
+                    System.out.println(";--;'");
+                }
+            }
+
+            System.out.println("---+-----------+---------+---------+---------+---------+-----------+");
+            System.out.println(" Turno: " + turno + " - Has avanzado " + casillasAvanzadasTurno
+                    + " casillas - Estas en la casilla " + casillasAvanzadasJugador);
+
+            if (turno >= 50){
+                break;
+            }
+
+            }
+        
+        if (casillasAvanzadasJugador >= 60) {
+            System.out.println("Has acabado");
+        } else if (turno >= 50){
+            System.out.println("Se te han acabado los turnos");
+        }
+    }
+}  
