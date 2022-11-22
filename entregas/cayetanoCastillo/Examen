@@ -1,0 +1,79 @@
+public class prueba{
+    public static void main(String[]args){
+
+        final String valla    = "---+-----------+---------+---------+---------+---------+-----------+";
+        final String rango    = "---| 0.........1.........2.........3.........4.........5.........6 |";
+        final String posicion = "---| 0123456789012345678901234567890123456789012345678901234567890 |";
+        final String Camello  = "[J]| ;--;'";
+
+
+        int movimientoCamello = 0;
+        String queImprimir;
+        int probabilidad1;
+        int probabilidad2;
+        int probabilidad3;
+        int probabilidad4;
+        int avance;
+        int uno;
+        int cuatro;
+        int recuento;
+
+
+        System.out.println(valla);
+        System.out.println(rango);
+        System.out.println(posicion);
+        System.out.println(valla);
+        System.out.println(Camello);
+        System.out.println(valla);
+
+        System.out.println("  ");
+        
+        
+        for (int turno = 1; turno != 50; turno = turno+1) {
+            System.out.println ("Por favor introduzca un número por teclado:");
+
+            
+			int Avance = (int) (Math.random()* (4-1+1)) + 1;
+            System.out.println("El número escogido es " + Avance);
+
+            if(Avance == 1){
+                probabilidad1 = (int) Math.random();
+                if(probabilidad1 < 0.6);
+                
+                System.out.println("El camello avanzo 1 casilla");
+                
+
+                }else {
+                System.out.println("El camello no avanzo este turno");
+                }
+            
+            if(Avance == 2){
+                probabilidad2 = (int) Math.random();
+                if(probabilidad2 < 0.4);
+            System.out.println("El camello avanzo 2 casillas");
+
+            } else {
+            System.out.println("El camello no avanzo este turno");
+
+            }
+            if(Avance == 3){
+                probabilidad3 = (int) Math.random();
+                if(probabilidad3 < 0.3);
+            System.out.println("El camello avanzo 4 casillas");
+
+            } else {
+            System.out.println("El camello no avanzo este turno");
+
+            }
+            if(Avance == 4){
+                probabilidad4 = (int) Math.random();
+                if(probabilidad4 < 0.1);
+            System.out.println("El camello avanzo 6 casillas");
+
+            } else {
+            System.out.println("El camello no avanzo este turno");
+               
+                }
+            }
+        }
+    }
