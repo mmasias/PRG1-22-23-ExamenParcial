@@ -1,0 +1,1 @@
+Se proponen algunas soluciones.
